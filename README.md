@@ -1,4 +1,6 @@
 # Cordatus Stream Engine - Camera Player Agent
+![Run the application](/assets/play_camera.gif)
+
 This sample GUI application aims to provide a foundation for computer vision applications where real time camera streaming is required. It is built on top of CSE Live Stream Agent to benefit from Cordatus Stream Engine's low latency hardware accelerated live camera streaming capabilities for custom AI applications.
 
 Agent is designed and tested to work with local camera sources including USB, CSI and RTSP/HTTP but it can also be used if the remote client necessary ports are forwarded accordingly.
