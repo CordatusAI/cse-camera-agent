@@ -1,0 +1,6 @@
+asyncio
+aiortc
+requests
+numpy
+PySimpleGUI==4.60.5
+pillow
