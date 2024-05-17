@@ -64,7 +64,6 @@ python3 camera_player.py
 Defining variables, camera types list, default target and a default HTTP camera source:
 ```
 is_first = True
-is_connected = False
 cam_types = ['CSI','USB', 'RTSP/HTTP']
 cse_target = "http://0.0.0.0:7005"
 cam_path = "http://renzo.dyndns.tv/mjpg/video.mjpg"
@@ -121,14 +120,12 @@ while True:  # Event Loop
     if event == sg.WIN_CLOSED or event == 'Exit':
         break
 
-    if is_connected == False and event == 'Connect':
+    if event == 'Connect':
         cse_target = window['TARGET_IP'].get()
         cam_type = window['CAM_TYPE'].get()
         cam_path = window['CAM_SRC'].get()
         token = window['TOKEN'].get()
         client = connect(client, cse_target, cam_type, cam_path, token)
-        if client :
-            is_connected = True
         time.sleep(1)
     
     if client is None :

@@ -7,7 +7,6 @@ import time
 import json
 
 is_first = True
-is_connected = False
 cam_types = ['CSI','USB', 'RTSP/HTTP']
 cse_target = "http://0.0.0.0:7005"
 cam_path = "http://renzo.dyndns.tv/mjpg/video.mjpg"
